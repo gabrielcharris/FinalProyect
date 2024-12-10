@@ -22,7 +22,8 @@ function startProcess(command, args, name) {
 startProcess('node', ['server.js'], 'Node.js Server');
 
 // Iniciar camnew.py
-startProcess('python', ['camnew.py'], 'Python Plate Detection');
+startProcess('python3', ['camnew.py'], 'Python Plate Detection');
 
 // Iniciar mjpeg_server.py
-startProcess('python', ['mjpeg_server.py'], 'Python MJPEG Server');
+startProcess('python3', ['mjpeg_server.py'], 'Python MJPEG Server');
+
