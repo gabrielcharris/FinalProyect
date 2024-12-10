@@ -11,9 +11,9 @@ const io = socketIo(server);
 
 // Conexión a la base de datos MySQL
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Aronna117',
+    host: "placas.cnk4qa6sidds.us-east-1.rds.amazonaws.com",
+    user: "admin",
+    password: 'admin1234',
     database: 'placas_db',
 });
 

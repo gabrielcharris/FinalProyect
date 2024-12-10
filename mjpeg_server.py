@@ -5,7 +5,7 @@ from flask import Flask, Response
 app = Flask(__name__)
 
 # Ruta RTSP (la misma que en camnew.py)
-rtsp_url = "rtsp://admin:abcd1234..@181.236.158.144:554/Streaming/Channels/101"
+rtsp_url = "rtsp://admin:abcd1234..@181.236.157.101:554/Streaming/Channels/101"
 
 # Captura de video
 camera = cv2.VideoCapture(rtsp_url)

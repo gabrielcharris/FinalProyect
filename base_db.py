@@ -1,14 +1,14 @@
 import mysql.connector
 from mysql.connector import Error
 
-# Conexión a la base de datos MySQL
+# Conexión a la base de datos MySQL en AWS RDS
 def conectar_db():
     try:
         conn = mysql.connector.connect(
-            host="localhost",        # Cambia si tu servidor no es local
-            user="root",             # Usuario de MySQL
-            password="Aronna117",    # Contraseña de MySQL
-            database="placas_db"     # Nombre de tu base de datos
+            host="placas.cnk4qa6sidds.us-east-1.rds.amazonaws.com",  # Endpoint de tu base de datos
+            user="admin",                                           # Usuario de MySQL
+            password="admin1234",                               # Contraseña de MySQL
+            database="placas_db"                                    # Nombre de tu base de datos
         )
         if conn.is_connected():
             print("Conexión exitosa a la base de datos.")
