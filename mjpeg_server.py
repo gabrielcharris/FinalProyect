@@ -5,10 +5,14 @@ from flask import Flask, Response
 app = Flask(__name__)
 
 # Ruta RTSP (la misma que en camnew.py)
-rtsp_url = "rtsp://admin:abcd1234..@181.236.157.101:554/Streaming/Channels/101"
+rtsp_url = "rtsp://admin:abcd1234..@181.236.157.82:554/Streaming/Channels/101"
 
 # Captura de video
 camera = cv2.VideoCapture(rtsp_url)
+camera.set(cv2.CAP_PROP_BUFFERSIZE, 1)  # Ajustar a 1 frame para minimizar retraso
+camera.set(cv2.CAP_PROP_FPS, 10)        # Limitar los FPS a 10
+camera.set(cv2.CAP_PROP_FRAME_WIDTH, 640)  # Reducir resolución
+camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
 def generate_original_frames():
     """Genera frames originales sin procesar"""

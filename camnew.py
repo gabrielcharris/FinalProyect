@@ -12,13 +12,13 @@ import requests  # Importar requests para enviar datos al servidor
 app = Flask(__name__)
 
 # Configuración de Tesseract-OCR
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = "/usr/local/bin/tesseract"
 
 # URL RTSP de la cámara IP
-rtsp_url = "rtsp://admin:abcd1234..@181.236.157.101:554/Streaming/Channels/101"
+rtsp_url = "rtsp://admin:abcd1234..@181.236.157.82:554/Streaming/Channels/101"
 
 # Ruta completa al archivo ejecutable de FFmpeg
-ffmpeg_path = r"C:\ffmpeg\ffmpeg.exe"
+ffmpeg_path = "/usr/local/bin/ffmpeg"
 
 # Configura el tamaño de la ventana y la resolución
 width, height = 1280, 720
@@ -61,7 +61,7 @@ def start_ffmpeg_process():
 def send_plate_to_server(plate):
     """Enviar la placa detectada al servidor."""
     try:
-        requests.post('http://localhost:3000/update', json={'placa': plate})
+        requests.post('http://eurowash.ddns.net/update', json={'placa': plate})
         print(f"Placa enviada al servidor: {plate}")
     except requests.exceptions.RequestException as e:
         print(f"Error al enviar la placa al servidor: {e}")

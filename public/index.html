@@ -34,7 +34,7 @@
         // Función para obtener y mostrar las placas almacenadas en la base de datos
         async function fetchPlates() {
             try {
-                const response = await fetch("http://localhost:80/plates");
+                const response = await fetch("http://eurowash.ddns.net/plates");
                 const plates = await response.json();
 
                 const platesTable = document.getElementById("plates-table");
@@ -64,7 +64,7 @@
         async function resetTable() {
             if (confirm('¿Estás seguro de que quieres reiniciar la tabla? Esto eliminará todos los registros.')) {
                 try {
-                    const response = await fetch("http://localhost:80/reset_table", { method: 'POST' });
+                    const response = await fetch("http://eurowash.ddns.net/reset_table", { method: 'POST' });
                     const message = await response.text();
                     alert(message); // Muestra el mensaje del servidor
                     fetchPlates(); // Actualiza la tabla
@@ -89,7 +89,7 @@
             const queryString = queryParams.length > 0 ? `?${queryParams.join('&')}` : '';
 
             try {
-                const response = await fetch(`http://localhost:80/search_plates${queryString}`);
+                const response = await fetch(`http://eurowash.ddns.net/search_plates${queryString}`);
                 const results = await response.json();
 
                 const searchResultsTable = document.getElementById("search-results");
@@ -140,13 +140,13 @@
         <!-- Sección de feed original -->
         <section id="live-feed">
             <h2>Live Feed (Original)</h2>
-            <img src="http://localhost:80/original_feed" alt="Live Feed">
+            <img src="http://eurowash.ddns.net:5001/video_feed" alt="/video_feed">
         </section>
 
         <!-- Sección de feed procesado -->
         <section id="processed-feed">
             <h2>Processed Feed</h2>
-            <img src="http://localhost:80/processed_feed" alt="Processed Feed">
+            <img src="http://eurowash.ddns.net:5001/processed_feed" alt="/processed_feed">
         </section>
 
         <!-- Sección de placas detectadas -->
@@ -154,9 +154,8 @@
             <h2>Plates Detected</h2>
             <div id="current-plate">No plates detected yet.</div>
             <button onclick="fetchPlates()">Refresh List</button>
-            <button onclick="resetTable()">Reiniciar Tabla</button> <!-- Botón para reiniciar la tabla -->
+            <button onclick="resetTable()">Reiniciar Tabla</button>
             <table id="plates-table" border="1">
-                <!-- Tabla dinámica con los datos de las placas -->
                 <tr>
                     <th>ID</th>
                     <th>Placa</th>
@@ -178,7 +177,6 @@
                 <button type="submit">Buscar</button>
             </form>
             <table id="search-results" border="1">
-                <!-- Resultados de búsqueda -->
                 <tr>
                     <th>ID</th>
                     <th>Placa</th>

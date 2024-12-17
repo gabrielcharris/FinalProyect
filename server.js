@@ -39,11 +39,11 @@ app.get('/', (req, res) => {
 
 // Rutas para los feeds (original y procesado) - Se colocan primero para evitar conflictos
 app.get('/original_feed', (req, res) => {
-    res.redirect('http://localhost:5000/video_feed');
+    res.redirect('http://eurowash.ddns.net:5001/video_feed');
 });
 
 app.get('/processed_feed', (req, res) => {
-    res.redirect('http://localhost:5000/processed_feed');
+    res.redirect('http://eurowash.ddns.net:5001/processed_feed');
 });
 
 // Almacenar el último estado de la placa detectada
