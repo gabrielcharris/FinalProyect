@@ -415,3 +415,298 @@ git add .
 git status
 git commit -m "Versión montada en la nube"
 git push origin main
+git reflog
+git checkout 84a9e8d
+mkdir ~/temporal
+mv .bash_history .lesshst ~/temporal/
+git checkout 84a9e8d
+ls
+cd FinalProyect
+sudo node start.js
+ls
+sudo nano base_db.py
+cd ..
+ls
+ls FinalProyect
+sudo node start.js
+cd FinalProyect
+sudo node start.js
+cd
+ls
+mv requirements.txt FinalProyect/
+ls
+cd FinalProyect
+cd
+git remote -v
+git status
+cd FinalProyect
+git status 
+ls
+cd
+ls
+cd temporal
+ls
+cd
+cd FinalProyect
+git add .
+git commit -m "Incluyendo requirements.txt"
+git push origin main
+cd
+ls
+cd
+cd FinalProyect
+ls
+git add .
+git commit -m "Subir FinalProyect con todos los archivos relevantes"
+git checkout main
+git add .
+git commit -m "Subir FinalProyect con todos los archivos relevantes"
+git status
+git remote -v
+find . -type d -name ".git"
+cd
+find . -type d -name ".git"
+mv .git FinalProyect/
+cd FinalProyect
+git status
+cd
+ls
+git checkout --
+git checkout -- .
+cd FinalProyect
+git checkout -- .
+git status
+mv FinalProyect/.git .
+ls
+cd
+ls
+find . -type d -name ".git"
+git checkout -- .
+mv FinalProyect/.git .
+git checkout -- .
+git status
+ls
+git reflog
+git checkout 84a9e8d
+ls
+cd FinalProyect
+ls
+cd
+git checkout 84a9e8d
+git checkout -b recuperar-archivos
+git push origin recuperar-archivos
+git push origin recuperar-archivos:main --force
+ls
+cd
+cd FinalProyect
+ls
+cd
+git reset --hard b5c07ae
+git push origin main --force
+ls
+git status
+find / -name "1.83.0.tar.gz" 2>/dev/null
+find / -name "ffmpeg-release-i686-static.tar.xz" 2>/dev/null
+find / -name "noip-2.1.9-1" 2>/dev/null
+find / -name "requirements.txt" 2>/dev/null
+find / -name "5.3.3.tar.gz" 2>/dev/null
+find / -name "ffmpeg-7.0.2-i686-static" 2>/dev/null
+find / -name "leptonica-1.83.0" 2>/dev/null
+find / -name "noip-2.1.9-1.tar.gz" 2>/dev/null
+find / -name "tesseract-5.3.3" 2>/dev/null
+git reflog
+git checkout 84a9e8d
+git checkout 84a9e8d -- .
+ls
+ls FinalProyect
+ls -l
+ls
+rm -rf README.md
+ls
+cd FinalProyec
+ls
+cd
+rm -rf cam.py
+rm -rf base_db.py
+rm -rf mjpeg_server.py
+rm -rf oldnewcam.py
+rm -rf server.js
+rm -rf sincm.py
+rm -rf start.js
+rm -rf video.py
+ls
+rm -rf camnew.py 
+cd FinalProyect
+ls
+cd
+rm -rf package.json
+rm -rf package-lock.json
+ls
+rm -rf __pycache__/
+rm -rf public/
+ls
+cd FinalProyect
+ls
+mv requirements.txt \FinalProyect
+cd
+mv requirements.txt \FinalProyect
+ls
+cd FinalProyect
+ls
+sudo node start.js 
+cd
+git branch
+git checkout recuperar-archivos
+ls
+git add .
+git commit -m "Recuperando archivos y configuraciones"
+git push origin recuperar-archivos
+git checkout main
+git merge recuperar-archivos
+git push origin main
+cd
+ls
+cd FinalProyect/
+ls
+cd
+cd FinalProyect/
+ls
+sudo nano start.js
+sudo nano camnew.py
+sudo node start.js 
+sudo node mjpeg_proyect.js
+ls
+sudo nano start.js
+sudo python3 mjpeg_server.py
+cd FinalProyect
+ls
+python mjpeg_server.py
+python3 mjpeg_server.py
+cd FinalProyect
+sudo nano start.js
+suno node stat.js
+sudo node start.js
+ls
+sudo nano mjpeg_server.py
+python3 mjpeg_server.py
+sudo node start.js
+sudo nano mjpeg_server.py
+sudo nano camnew.py
+sudo nano mjpeg_server.py
+python3 mjpeg_server.py
+sudo nano start.js
+sudo nano camnew.py
+sudo nano mjpeg_server.py
+ls
+cd public
+ls
+cd index.thml
+index.html
+sudo nano index.html
+cd
+cd FinalProyect/
+sudo nano camnew.py
+sudo python3 camnew.py
+sudo nano camnew.py
+sudo node start.js
+node -v
+npm -v
+sudo npm install -g pm2
+pm2 start mjpeg_server.py 
+cd FinalProyect/
+pm2 start mjpeg_server.py 
+pm2 start server.js
+pm2 start camnew.py
+pm2 start server.js
+pm2 restart
+pm2 startup
+pm2 list
+pm2 start server.js
+pm2 restart all
+pm2 list
+pm2 logs server
+sudo pm2 start.js
+sudo pm2 list
+pm2 list
+pm2 stopall
+pm2 stop all
+sudo pm2 camnew.py
+sudo pm2 start.js
+sudo pm2 start start.js
+ls
+cd FinalProeyect
+cd FinalProyect/
+sudo pm2 list
+sudo pm2 restart all
+ls
+sudo nano camnew.py
+sudo nano mjpeg_server.py
+sudo nano server.js
+cd public/
+ls
+sudo nano index.html
+cd .
+cd
+cd FinalProyect/
+cd
+sudo pm2 restart all
+sudo pm2 stop all
+cd FinalProyect
+sudo python3 mjpeg_server.py
+sudo cat mjpeg_server.py
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+cd FinalProyect/
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+ffmpeg -i "rtsp://admin:abcd1234..@161.10.84.55:554/Streaming/Channels/101"        -f mpegts udp://127.0.0.1:8554
+cd FinalProyect/
+sudo nano mjpeg_server.py 
+ffmpeg -i "rtsp://admin:abcd1234..@161.10.84.55:554/Streaming/Channels/101"        -f mpegts udp://127.0.0.1:8554
+sudo python3 mjpeg_server.py
+ffmpeg -i "rtsp://admin:abcd1234..@161.10.84.55:554/Streaming/Channels/101"        -f mpegts udp://127.0.0.1:8554
+ffmpeg -i "rtsp://admin:abcd1234..@161.10.84.55:554/Streaming/Channels/101" -f mpegts udp://127.0.0.1:8554 &
+sudo python3 mjpeg_server.py
+cd FinalProyect/
+sudo nano mjpeg_server.py 
+suto cat mjpeg_server.py 
+cat mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+cat mjpeg_server.py 
+sudo python3 mjpeg_server.py
+cat mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo ode start.js
+sudo node start.js
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+sudo nano mjpeg_server.py 
+sudo python3 mjpeg_server.py
+cd FinalProyect/
+sudo node starr.js
+sudo node start.js 
+sudo nano mjpeg_server.py 
+sudo node start.js 
+sudo nano mjpeg_server.py 
+sudo node start.js 
+sudo pm2 start start.js
+sudo pm2 stop all
+sudo nano mjpeg_server.py 
+sudo nano camnew.py

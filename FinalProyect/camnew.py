@@ -15,7 +15,7 @@ app = Flask(__name__)
 pytesseract.pytesseract.tesseract_cmd = "/usr/local/bin/tesseract"
 
 # URL RTSP de la cámara IP
-rtsp_url = "rtsp://admin:abcd1234..@181.236.157.82:554/Streaming/Channels/101"
+rtsp_url = "rtsp://admin:abcd1234..@161.10.84.55:554/Streaming/Channels/101"
 
 # Ruta completa al archivo ejecutable de FFmpeg
 ffmpeg_path = "/usr/local/bin/ffmpeg"
