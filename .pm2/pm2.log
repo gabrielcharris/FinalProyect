@@ -238,3 +238,29 @@
 2025-01-04T03:46:53: PM2 log: pid=1277034 msg=process killed
 2025-01-04T03:46:53: PM2 log: App [camnew:2] exited with code [0] via signal [SIGINT]
 2025-01-04T03:46:53: PM2 log: pid=1277044 msg=process killed
+2025-01-11T16:34:25: PM2 log: pm2 has been killed by signal, dumping process list before exit...
+2025-01-11T16:34:25: PM2 log: Deleting process 0
+2025-01-11T16:34:25: PM2 log: Deleting process 1
+2025-01-11T16:34:25: PM2 log: Deleting process 2
+2025-01-11T16:34:25: PM2 log: Exited peacefully
+2025-02-17T20:33:41: PM2 log: ===============================================================================
+2025-02-17T20:33:41: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-02-17T20:33:41: PM2 log: Time                 : Mon Feb 17 2025 20:33:41 GMT+0000 (Coordinated Universal Time)
+2025-02-17T20:33:41: PM2 log: PM2 version          : 5.4.3
+2025-02-17T20:33:41: PM2 log: Node.js version      : 18.20.4
+2025-02-17T20:33:41: PM2 log: Current arch         : x64
+2025-02-17T20:33:41: PM2 log: PM2 home             : /home/ec2-user/.pm2
+2025-02-17T20:33:41: PM2 log: PM2 PID file         : /home/ec2-user/.pm2/pm2.pid
+2025-02-17T20:33:41: PM2 log: RPC socket file      : /home/ec2-user/.pm2/rpc.sock
+2025-02-17T20:33:41: PM2 log: BUS socket file      : /home/ec2-user/.pm2/pub.sock
+2025-02-17T20:33:41: PM2 log: Application log path : /home/ec2-user/.pm2/logs
+2025-02-17T20:33:41: PM2 log: Worker Interval      : 30000
+2025-02-17T20:33:41: PM2 log: Process dump file    : /home/ec2-user/.pm2/dump.pm2
+2025-02-17T20:33:41: PM2 log: Concurrent actions   : 2
+2025-02-17T20:33:41: PM2 log: SIGTERM timeout      : 1600
+2025-02-17T20:33:41: PM2 log: ===============================================================================
+2025-02-17T20:34:19: PM2 log: App [start:0] starting in -fork mode-
+2025-02-17T20:34:19: PM2 log: App [start:0] online
+2025-02-17T20:39:52: PM2 log: Stopping app:start id:0
+2025-02-17T20:39:52: PM2 log: App [start:0] exited with code [0] via signal [SIGINT]
+2025-02-17T20:39:52: PM2 log: pid=1997238 msg=process killed

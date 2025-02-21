@@ -11,14 +11,18 @@
 
         // Mostrar placas detectadas en tiempo real
         socket.on('updatePlaca', (data) => {
-            const currentPlateElement = document.getElementById('current-plate');
+            // Tomar los elementos donde queremos inyectar la información
+            const plateSpan = document.getElementById('detected-plate');
+            const timeSpan = document.getElementById('detected-plate-timestamp');
             const platesTable = document.getElementById("plates-table");
 
             // Formatear el timestamp
             const timestamp = new Date(data.timestamp).toLocaleString();
 
-            // Actualizar la placa detectada actualmente
-            currentPlateElement.innerHTML = `<strong>Placa detectada:</strong> ${data.placa} <br><strong>Timestamp:</strong> ${timestamp}`;
+            // Actualizar el texto "Placa detectada"
+            plateSpan.textContent = data.placa;
+            // Actualizar el timestamp
+            timeSpan.textContent = timestamp;
 
             // Añadir la nueva placa a la tabla
             const newRow = `
@@ -38,13 +42,14 @@
                 const plates = await response.json();
 
                 const platesTable = document.getElementById("plates-table");
+                // Reiniciar encabezados de la tabla
                 platesTable.innerHTML = `
                     <tr>
                         <th>ID</th>
                         <th>Placa</th>
                         <th>Timestamp</th>
                     </tr>
-                `; // Reiniciar encabezados de tabla
+                `;
 
                 plates.forEach((plate, index) => {
                     platesTable.innerHTML += `
@@ -53,7 +58,7 @@
                             <td>${plate.placa}</td>
                             <td>${new Date(plate.timestamp).toLocaleString()}</td>
                         </tr>
-                    `;
+                   `;
                 });
             } catch (error) {
                 console.error("Error al obtener las placas:", error);
@@ -86,6 +91,7 @@
             if (startInput) queryParams.push(`startTimestamp=${encodeURIComponent(startInput)}`);
             if (endInput) queryParams.push(`endTimestamp=${encodeURIComponent(endInput)}`);
 
+            // Construir la query string
             const queryString = queryParams.length > 0 ? `?${queryParams.join('&')}` : '';
 
             try {
@@ -101,7 +107,7 @@
                     </tr>
                 `;
 
-                results.forEach((result, index) => {
+                results.forEach((result) => {
                     searchResultsTable.innerHTML += `
                         <tr>
                             <td>${result.id}</td>
@@ -110,7 +116,6 @@
                         </tr>
                     `;
                 });
-
                 if (results.length === 0) {
                     alert("No se encontraron resultados.");
                 }
@@ -152,7 +157,16 @@
         <!-- Sección de placas detectadas -->
         <section id="plates-list">
             <h2>Plates Detected</h2>
-            <div id="current-plate">No plates detected yet.</div>
+
+            <!-- NUEVO: Texto explícito para “placa detectada” y timestamp -->
+            <div style="margin-bottom: 10px;">
+                <strong>Placa detectada:</strong>
+                <span id="detected-plate">No plates detected yet.</span>
+                &nbsp;&nbsp;
+                <strong>Timestamp:</strong>
+                <span id="detected-plate-timestamp">--</span>
+            </div>
+
             <button onclick="fetchPlates()">Refresh List</button>
             <button onclick="resetTable()">Reiniciar Tabla</button>
             <table id="plates-table" border="1">
@@ -187,3 +201,4 @@
     </main>
 </body>
 </html>
+

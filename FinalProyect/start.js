@@ -25,5 +25,5 @@ startProcess('node', ['server.js'], 'Node.js Server');
 startProcess('python3', ['camnew.py'], 'Python Plate Detection');
 
 // Iniciar mjpeg_server.py
-startProcess('python3', ['mjpeg_server.py'], 'Python MJPEG Server');
+//startProcess('python3', ['mjpeg_server.py'], 'Python MJPEG Server');
 
