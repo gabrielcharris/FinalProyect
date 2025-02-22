@@ -1,48 +1,3 @@
-ls
-sudo nano mjpeg_server.py 
-cd
-git status
-cd FinalProject
-cd FinalProyect 
-git status
-git add . 
-git status
-git commit -m "Versión montada en la nube"
-git push origin main
-git reflog
-git checkout 84a9e8d
-mkdir ~/temporal
-mv .bash_history .lesshst ~/temporal/
-git checkout 84a9e8d
-ls
-cd FinalProyect
-sudo node start.js
-ls
-sudo nano base_db.py
-cd ..
-ls
-ls FinalProyect
-sudo node start.js
-cd FinalProyect
-sudo node start.js
-cd
-ls
-mv requirements.txt FinalProyect/
-ls
-cd FinalProyect
-cd
-git remote -v
-git status
-cd FinalProyect
-git status 
-ls
-cd
-ls
-cd temporal
-ls
-cd
-cd FinalProyect
-git add .
 git commit -m "Incluyendo requirements.txt"
 git push origin main
 cd
@@ -997,4 +952,49 @@ nano start.js
 nano server.js
 cd ..
 cd actions-runner/_work/LOSPROPIOS/LOSPROPIOS
+pnpm run dev
+ls
+sudo yum install git -y
+git --version
+git config --global user.name "Mighty-Fight"
+git config --global user.email "amantillac@uninorte.edu.co"
+git init
+git remote add origin https://github.com/gabrielcharris/FinalProyect.git
+git remote -v
+git status
+git add .
+git submodule add <URL_DEL_SUBMODULO> actions-runner/_work/LOSPROPIOS/LOSPROPIOS
+ls 
+actions-runner
+ls
+cd actions-runner
+ls
+cd _work
+ls
+cd LOSPROPIOS
+LS 
+ls
+cd ..
+ls
+mv actions-runner/_work/LOSPROPIOS ~/LOSPROPIOS
+ls
+cd LOSPROPIOS
+ls
+cd ..
+ls
+rm -rf ~/LOSPROPIOS/.git
+ls
+git rm --cached -r actions-runner/_work/LOSPROPIOS
+ls
+rm -rf actions-runner
+ls
+git rm --cached -r actions-runner
+ls
+git add .
+rm -rf ~/LOSPROPIOS/.git
+git add .
+git commit -m "Moviendo LOSPROPIOS fuera de actions-runner"
+git push origin main
+ls 
+cd LOSPROPIOS/LOSPROPIOS
 pnpm run dev
